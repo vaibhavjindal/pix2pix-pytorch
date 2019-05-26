@@ -106,5 +106,5 @@ class discriminator(nn.Module):
         x = F.leaky_relu(self.conv4_bn(self.conv4(x)), 0.2)
         x = F.sigmoid(self.conv5(x))
 
-		return x
+        return x
 
